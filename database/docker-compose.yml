@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_audit
+    restart: always
+    environment:
+      POSTGRES_DB: audit_system
+      POSTGRES_USER: user_audit
+      POSTGRES_PASSWORD: password_audit
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

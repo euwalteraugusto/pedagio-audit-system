@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "python-service/venv/bin/python",
+    "python.analysis.extraPaths": [
+        "./python-service"
+    ],
+    "python.analysis.typeCheckingMode": "basic"
+}
