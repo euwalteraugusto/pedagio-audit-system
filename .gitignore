@@ -1,0 +1,20 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Java / Maven
+target/
+build/
+
+# Segredos e ambiente
+.env
+*.env
+
+# IDEs e SO
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
