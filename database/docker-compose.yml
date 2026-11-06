@@ -4,9 +4,9 @@ services:
     container_name: postgres_audit
     restart: always
     environment:
-      POSTGRES_DB: audit_system
-      POSTGRES_USER: user_audit
-      POSTGRES_PASSWORD: password_audit
+      POSTGRES_DB: ${DB_NAME:-audit_system}
+      POSTGRES_USER: ${DB_USER:-user_audit}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-dev-password}
     ports:
       - "5432:5432"
     volumes:
